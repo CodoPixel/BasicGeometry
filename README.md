@@ -135,7 +135,7 @@ data.set('r', { value: 5, unit: geometry.getdefaultClassicUnit() });
 data.set('r', { value: 5 });
 ```
 
-Therefore, you have: `getdefaultClassicUnit()` (cm), `getDefaultSquareUnit()` (cm2), `getDefaultVolumeUnit()` (cm3). You can also use: `setDefaultShape()` and `setDefaultShape()`.
+Therefore, you have: `getdefaultClassicUnit()` (cm), `getDefaultSquareUnit()` (cm2), `getDefaultVolumeUnit()` (cm3). You can also use: `getDefaultShape()` and `setDefaultShape()`.
 
 ## License
 
