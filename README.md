@@ -115,6 +115,8 @@ var perimeter = geometry.perimeter(data, "cm", "rectangle");
 // perimeter = 20 (cm)
 ```
 
+The list of all the available shapes:
+
 |Name|Formula|Data|
 |----|-------|----|
 |square|4 * c|c|
