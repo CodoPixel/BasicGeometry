@@ -150,7 +150,7 @@ class BasicGeometry {
         }
 
         var p = this._deterResultOfCalculations(this.currentClassicUnit, formula, resultUnit, new Meters());
-        console.log(`${formula} ${this.currentClassicUnit} = ${p} ${resultUnit}`);
+        // console.log(`${formula} ${this.currentClassicUnit} = ${p} ${resultUnit}`);
         
         return p;
     }
@@ -250,7 +250,7 @@ class BasicGeometry {
         }
 
         var a = this._deterResultOfCalculations(this.currentClassicUnit+"2", formula, resultUnit, new SquareMeters());
-        console.log(`${formula} ${this.currentClassicUnit} = ${a} ${resultUnit}`);
+        // console.log(`${formula} ${this.currentClassicUnit}2 = ${a} ${resultUnit}`);
         
         return a;
     }
@@ -353,7 +353,7 @@ class BasicGeometry {
         }
 
         var v = this._deterResultOfCalculations(this.currentClassicUnit+"3", formula, resultUnit, new CubicMeters());
-        console.log(`${formula} ${this.currentClassicUnit} = ${v} ${resultUnit}`);
+        // console.log(`${formula} ${this.currentClassicUnit}3 = ${v} ${resultUnit}`);
         
         return v;
     }

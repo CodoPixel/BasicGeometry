@@ -28,9 +28,10 @@
         var geometry = new BasicGeometry();
 
         var data = new Map();
-        data.set('r', { value: 2 });
+        data.set('R', { value: 30, unit: 'mm' });
 
-        var v = geometry.area(data, "cm2", "sphere");
+        var volume = geometry.volume(data, "cm3", "Globe");
+        // volume = 113.09733552923255 (cm3)
     </script>
 </body>
 </html>
