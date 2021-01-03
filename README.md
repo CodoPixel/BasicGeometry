@@ -41,10 +41,10 @@ In this exemple, the volume of a globe with a radius of 5 cm is 113.097335529232
 |cone|(Math.PI * R**2 * h) / 3|
 |pyramid|(L * l * h) / 3|
 |globe|(4 * Math.PI * R**3) / 3|
-|torus|(2 * Math.PI**2) * r**2 * R|
+|torus|(2 * Math.PI** 2) * r**2 * R|
 |regular_octahedron or regular octahedron or octahedron|(Math.sqrt(2) / 3) * a**3|
 |truncated_cylinder or truncated cylinder|(Math.PI * R**2 * (H + h)) / 2|
-|truncated_cone or truncated cone|h * (Math.PI / 3) * (r**2 + R**2 + r * R)|
+|truncated_cone or truncated cone|h * (Math.PI / 3) * (r**2 + R **2 + r * R)|
 |truncated_pyramid or truncated pyramid|(h * (B + b + Math.sqrt(B * b))) / 3|
 
 In the code, the **name has to correspond** (except for the capital letters), and **the letters too**. For example, in the calculation of the volume of a globe, it has to be '**R**'. **Look at the formulas to identify the necessary name of all variables**.
@@ -95,7 +95,7 @@ The list of all the available shapes:
 |circle or disk|Math.PI * r**2|
 |right prism or right_prism|2 * A + P * h (Area of a base and Perimeter of a base)|
 |cylinder|2 * Math.PI * r * (h + r)|
-|cone|Math.PI * r * (r + Math.sqrt(h**2 + r**2))|
+|cone|Math.PI * r * (r + Math.sqrt(h**2 + r **2))|
 |sphere|4 * Math.PI * r**2|
 
 In the code, the **name has to correspond** (except for the capital letters), and **the letters too**. For example, in the calculation of the volume of a globe, it has to be '**R**'. **Look at the formulas to identify the necessary name of all variables**.
