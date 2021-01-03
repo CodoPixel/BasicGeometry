@@ -18,7 +18,7 @@ var geometry = new BasicGeometry(defaultShape); // you can give a default shape 
 
 ## Calculate a volume
 
-You can calculate the volume of a specific shape with the method: `volume` from `geometry`:
+You can calculate the volume of a specific shape with the method: `volume()` from `geometry`:
 
 ```
 var geometry = new BasicGeometry();
@@ -68,7 +68,7 @@ var volume = geometry.volume(data, "cm3", "Paver");
 
 ## Calculate an area
 
-You can calculate the area of a specific shape with the method: `area` from `geometry`:
+You can calculate the area of a specific shape with the method: `area()` from `geometry`:
 
 ```
 var geometry = new BasicGeometry();
@@ -102,7 +102,7 @@ In the code, the **name has to correspond** (except for the capital letters), an
 
 ## Calculate a perimeter
 
-You can calculate the perimeter of a specific shape with the method: `perimeter` from `geometry`:
+You can calculate the perimeter of a specific shape with the method: `perimeter()` from `geometry`:
 
 ```
 var geometry = new BasicGeometry();
@@ -135,7 +135,7 @@ data.set('r', { value: 5, unit: geometry.getdefaultClassicUnit() });
 data.set('r', { value: 5 });
 ```
 
-Therefore, you have: `getdefaultClassicUnit()` (cm), `getDefaultSquareUnit` (cm2), `getDefaultVolumeUnit` (cm3). You can also use: `setDefaultShape` and `setDefaultShape`.
+Therefore, you have: `getdefaultClassicUnit()` (cm), `getDefaultSquareUnit()` (cm2), `getDefaultVolumeUnit()` (cm3). You can also use: `setDefaultShape()` and `setDefaultShape()`.
 
 ## License
 
