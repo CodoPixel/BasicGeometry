@@ -32,20 +32,20 @@ var volume = geometry.volume(data, "cm3", "Globe");
 
 In this exemple, the volume of a globe with a radius of 5 cm is 113.09733552923255 cm3. Before going any further in unit conversions, I present you a table recapitulating all the shapes and their associated formula as it is written in javascript:
 
-|Name|Formula|
-|----|-------|
-|cube|c * c * c|
-|paver|L * l * h|
-|prism|(b * h * p) / 2|
-|cylinder|Math.PI * R**2 * h|
-|cone|(Math.PI * R**2 * h) / 3|
-|pyramid|(L * l * h) / 3|
-|globe|(4 * Math.PI * R**3) / 3|
-|torus|(2 * Math.PI** 2) * r**2 * R|
-|regular_octahedron or regular octahedron or octahedron|(Math.sqrt(2) / 3) * a**3|
-|truncated_cylinder or truncated cylinder|(Math.PI * R**2 * (H + h)) / 2|
-|truncated_cone or truncated cone|h * (Math.PI / 3) * (r**2 + R **2 + r * R)|
-|truncated_pyramid or truncated pyramid|(h * (B + b + Math.sqrt(B * b))) / 3|
+|Name|Formula|Data|
+|----|-------|----|
+|cube|c * c * c|c|
+|paver|L * l * h|L, l, h|
+|prism|(b * h * p) / 2|b, h, p|
+|cylinder|Math.PI * R**2 * h|R, h|
+|cone|(Math.PI * R**2 * h) / 3|R, h|
+|pyramid|(L * l * h) / 3|L, l, h|
+|globe|(4 * Math.PI * R**3) / 3|R|
+|torus|(2 * Math.PI** 2) * r**2 * R|r, R|
+|regular_octahedron or regular octahedron or octahedron|(Math.sqrt(2) / 3) * a**3|a|
+|truncated_cylinder or truncated cylinder|(Math.PI * R**2 * (H + h)) / 2|R, H, h|
+|truncated_cone or truncated cone|h * (Math.PI / 3) * (r**2 + R **2 + r * R)|h, r, R|
+|truncated_pyramid or truncated pyramid|(h * (B + b + Math.sqrt(B * b))) / 3|h, B, b|
 
 In the code, the **name has to correspond** (except for the capital letters), and **the letters too**. For example, in the calculation of the volume of a globe, it has to be '**R**'. **Look at the formulas to identify the necessary name of all variables**.
 
@@ -83,20 +83,20 @@ var area = geometry.area(data, "cm2", "cylinder");
 
 The list of all the available shapes:
 
-|Name|Formula|
-|----|-------|
-|square|c * c|
-|rectangle or oblong|L * l|
-|parallelogram|b * h|
-|lozenge, lozenge1, rhombus, rhombus1, rhomb, rhomb1, diamond, diamond1|(d * D) / 2|
-|lozenge2, rhombus2, rhomb2, diamond2|c * h|
-|triangle|(b * h) / 2|
-|trapeze or trapezium|((B + b) * h) / 2|
-|circle or disk|Math.PI * r**2|
-|right prism or right_prism|2 * A + P * h (Area of a base and Perimeter of a base)|
-|cylinder|2 * Math.PI * r * (h + r)|
-|cone|Math.PI * r * (r + Math.sqrt(h**2 + r **2))|
-|sphere|4 * Math.PI * r**2|
+|Name|Formula|Data|
+|----|-------|----|
+|square|c * c|c|
+|rectangle or oblong|L * l|L, l|
+|parallelogram|b * h|b, h|
+|lozenge, lozenge1, rhombus, rhombus1, rhomb, rhomb1, diamond, diamond1|(d * D) / 2|d, D|
+|lozenge2, rhombus2, rhomb2, diamond2|c * h|c, h|
+|triangle|(b * h) / 2|b, h|
+|trapeze or trapezium|((B + b) * h) / 2|B, b, h|
+|circle or disk|Math.PI * r**2|r|
+|right prism or right_prism|2 * A + P * h (Area of a base and Perimeter of a base)|h, A, P|
+|cylinder|2 * Math.PI * r * (h + r)|r, h|
+|cone|Math.PI * r * (r + Math.sqrt(h**2 + r **2))|r, h|
+|sphere|4 * Math.PI * r**2|r|
 
 In the code, the **name has to correspond** (except for the capital letters), and **the letters too**. For example, in the calculation of the volume of a globe, it has to be '**R**'. **Look at the formulas to identify the necessary name of all variables**.
 
@@ -114,6 +114,16 @@ data.set('l', { value: 5,  unit: 'cm' });
 var perimeter = geometry.perimeter(data, "cm", "rectangle");
 // perimeter = 20 (cm)
 ```
+
+|Name|Formula|Data|
+|----|-------|----|
+|square|4 * c|c|
+|rectangle|2 * (L + l)|L, l|
+|lozenge, rhombus, rhomb, diamond|4 * c|c|
+|circle or disk|2 * Math.PI * r|r|
+|triangle|a + b + c|a, b, c|
+
+In the code, the **name has to correspond** (except for the capital letters), and **the letters too**. For example, in the calculation of the volume of a globe, it has to be '**R**'. **Look at the formulas to identify the necessary name of all variables**.
 
 ## Last details
 
