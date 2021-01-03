@@ -35,11 +35,11 @@ In this exemple, the volume of a globe with a radius of 5 cm is 113.097335529232
 |Name|Formula|Data|
 |----|-------|----|
 |cube|c * c * c|c|
-|paver|L * l * h|L, l, h|
+|paver|L * _l_ * h|L, _l_, h|
 |prism|(b * h * p) / 2|b, h, p|
 |cylinder|Math.PI * R**2 * h|R, h|
 |cone|(Math.PI * R**2 * h) / 3|R, h|
-|pyramid|(L * l * h) / 3|L, l, h|
+|pyramid|(L * _l_ * h) / 3|L, _l_, h|
 |globe|(4 * Math.PI * R**3) / 3|R|
 |torus|(2 * Math.PI** 2) * r**2 * R|r, R|
 |regular_octahedron or regular octahedron or octahedron|(Math.sqrt(2) / 3) * a**3|a|
@@ -86,7 +86,7 @@ The list of all the available shapes:
 |Name|Formula|Data|
 |----|-------|----|
 |square|c * c|c|
-|rectangle or oblong|L * l|L, l|
+|rectangle or oblong|L * _l_|L, _l_|
 |parallelogram|b * h|b, h|
 |lozenge, lozenge1, rhombus, rhombus1, rhomb, rhomb1, diamond, diamond1|(d * D) / 2|d, D|
 |lozenge2, rhombus2, rhomb2, diamond2|c * h|c, h|
@@ -118,7 +118,7 @@ var perimeter = geometry.perimeter(data, "cm", "rectangle");
 |Name|Formula|Data|
 |----|-------|----|
 |square|4 * c|c|
-|rectangle|2 * (L + l)|L, l|
+|rectangle|2 * (L + _l_)|L, _l_|
 |lozenge, rhombus, rhomb, diamond|4 * c|c|
 |circle or disk|2 * Math.PI * r|r|
 |triangle|a + b + c|a, b, c|
