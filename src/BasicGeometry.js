@@ -290,6 +290,7 @@ class BasicGeometry {
                 var h = this._extrapolate('h');
                 var p = this._extrapolate('p');
                 formula = (b * h * p) / 2;
+                break;
             
             case "cylinder":
                 var R = this._extrapolate('R');
