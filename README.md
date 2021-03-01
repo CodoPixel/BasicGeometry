@@ -6,13 +6,13 @@ Allows you to calculate the volume, area or perimeter of all common geometric sh
 
 First of all, add `BasicGeometry` to your HTML page:
 
-```
+```html
 <script src="BasicGeometry.js"></script>
 ```
 
 Then, you need to create a new instance of `BasicGeometry`:
 
-```
+```javascript
 var geometry = new BasicGeometry(defaultShape); // you can give a default shape (the name of the shape, see below) 
 ```
 
@@ -20,7 +20,7 @@ var geometry = new BasicGeometry(defaultShape); // you can give a default shape 
 
 You can calculate the volume of a specific shape with the method: `volume()` from `geometry`:
 
-```
+```javascript
 var geometry = new BasicGeometry();
 
 var data = new Map();
@@ -53,7 +53,7 @@ In the code, the **name has to correspond** (except for the capital letters), an
 
 By default, the data are in centimeters (the 'classic unit'), and the default unit for the volume is `cm3` but you can modify these informations in order have more calculation flexibility. For exemple:
 
-```
+```javascript
 var geometry = new BasicGeometry();
 
 var data = new Map();
@@ -70,7 +70,7 @@ var volume = geometry.volume(data, "cm3", "Paver");
 
 You can calculate the area of a specific shape with the method: `area()` from `geometry`:
 
-```
+```javascript
 var geometry = new BasicGeometry();
 
 var data = new Map();
@@ -104,7 +104,7 @@ In the code, the **name has to correspond** (except for the capital letters), an
 
 You can calculate the perimeter of a specific shape with the method: `perimeter()` from `geometry`:
 
-```
+```javascript
 var geometry = new BasicGeometry();
 
 var data = new Map();
@@ -131,7 +131,7 @@ In the code, the **name has to correspond** (except for the capital letters), an
 
 These three lines do exactly the same thing :
 
-```
+```javascript
 data.set('r', { value: 5, unit: 'cm' });
 data.set('r', { value: 5, unit: geometry.getdefaultClassicUnit() });
 data.set('r', { value: 5 });
